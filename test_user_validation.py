@@ -58,7 +58,7 @@ class TestEmailValidation:
 class TestUsernameValidation:
     
     def test_valid_username(self):
-        username = "ramy_gomaa"
+        username = "mohamed_nabil"
         result = UserValidation.validate_username(username)
         assert result is True
     
@@ -73,17 +73,17 @@ class TestUsernameValidation:
         assert result is False
     
     def test_username_with_spaces(self):
-        username = "ramy gomaa"
+        username = "mohamed nabil"
         result = UserValidation.validate_username(username)
         assert result is False
     
     def test_username_with_symbols(self):
-        username = "ramy@123"
+        username = "mohamed@123"
         result = UserValidation.validate_username(username)
         assert result is False
     
     def test_username_with_digits(self):
-        username = "ramy123"
+        username = "moh123"
         result = UserValidation.validate_username(username)
         assert result is True
     
