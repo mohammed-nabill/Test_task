@@ -30,7 +30,7 @@ class TestEmailValidation:
         assert result is True
     
     def test_email_with_special_characters(self):
-        email = "ramy.gomaa_21@mail.co"
+        email = "mohamed.nabil_21@mail.co"
         result = UserValidation.validate_email(email)
         assert result is True
     
